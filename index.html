@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Valentine Website</title>
+
+  <style>
+    body {
+      background: linear-gradient(to bottom, pink, #ffb6c1);
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 100px;
+    }
+
+    h2 {
+      font-size: 26px;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .yes {
+      background: red;
+      color: white;
+    }
+
+    .no {
+      background: white;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Will you be my Valentine? 💖</h2>
+
+  <button class="yes" onclick="yesClick()">Yes 😍</button>
+  <button class="no" onclick="noClick()">No 😭</button>
+
+  <p id="message"></p>
+
+  <script>
+    function yesClick() {
+      document.getElementById("message").innerHTML =
+        "Yayyy 💕 I knew it!";
+    }
+
+    function noClick() {
+      document.getElementById("message").innerHTML =
+        "Please reconsider 🥺💔";
+    }
+  </script>
+
+</body>
+</html>
